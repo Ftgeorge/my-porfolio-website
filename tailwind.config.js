@@ -5,6 +5,8 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      cursive:["Karumbi", "sans-serif"],
+    },
   },
-  plugins: [],
-}
+  }
