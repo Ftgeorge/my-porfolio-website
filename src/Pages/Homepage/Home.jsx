@@ -11,7 +11,8 @@ import Dart from "../Homepage/Images/Dart.png"
 import LinkedIn from "../Homepage/Images/LinkedIn.png"
 import Github from "../Homepage/Images/Github.png"
 import Gmail from "../Homepage/Images/Gmail.png"
-import Twitter from "../Homepage/Images/Twitter.png"
+import Twitter from "../Homepage/Images/Twitter.jpg"
+import ProjectSection from "../../components/Projectspage";
 
 
 function Home (){
@@ -38,7 +39,7 @@ function Home (){
                 </div>
                 </div>
             </div>
-            <div className="w-5/12 flex justify-center py-28">
+            <div className="w-5/12 flex justify-center py-28 pb-52">
                 <div className="rounded-full w-96 h-96 bg-gray-400 my-12">
                     <img src={user} className="w-96 h-96 rounded-full" alt=""/>
                 </div>
@@ -50,20 +51,28 @@ function Home (){
 backgroundRepeat: "no-repeat",
 backgroundSize: "cover"}}>
             <h1 className="pt-20 text-transparent bg-clip-text bg-gradient-to-l from-white to-gray-900 text-center text-3xl">About</h1>
-            <h1 className="pb-32 text-center text-base text-gray-300">Step inside and get to know the mind behind the code</h1>
-            <div className="flex gap-5 px-44 pb-20">``
+            <h1 className="pb-28 text-center text-base text-gray-300">Step inside and get to know the mind behind the code</h1>
+            <div className="flex gap-5 px-44 pb-12">``
         <div className="w-6/12">
             <div className="flex gap-10">
             <img src={user} className="w-64 h-64 rounded-2xl" alt=""/>
             <div>
-            <h1 className="text-white mt-10 text-3xl text-bold">Fabunmi George Oluwatosin</h1>
+            <h1 className="text-white mt-8 text-3xl text-bold">Fabunmi George Oluwatosin</h1>
         <h1 className="mt-2 text-2xl text-gray-400 text-bold">FULLSTACK DEVELOPER</h1>
         <h1 className="mt-2 text-xl text-bold bg-clip-text text-gray-300">Software Engineer, Computer Scientist, Machine Learning Enthusiast</h1>
         <div className="flex justify-start gap-3 mt-4">
-            <img src={LinkedIn} className="w-6 my-2 mx-1.5" alt=""/>
-            <img src={Twitter} className="w-6 my-2 mx-1.5" alt=""/>
-            <img src={Github} className="w-6 my-2 mx-1.5" alt=""/>
-            <img src={Gmail} className="w-6 my-2 mx-1.5" alt=""/>
+<div className="w-12 h-12 rounded-full border border-gray-300">
+<img src={LinkedIn} className="w-6 mx-3 my-2.5"/>
+</div>
+<div className="w-12 h-12 rounded-full border border-gray-300">
+    <img src={Twitter} className="w-9 mx-1.5 my-1.5"/>
+</div>
+<div className="w-12 h-12 rounded-full border border-gray-300">
+<img src={Github} className="w-7 mx-2.5 my-2.5"/>
+</div>
+<div className="w-12 h-12 rounded-full border border-gray-300">
+<img src={Gmail} className="w-6 mx-3 my-3"/>
+</div>
             </div>
             </div>
             </div>
@@ -88,7 +97,7 @@ backgroundSize: "cover"}}>
                 <img src={SQL} className="w-20 mx-6 my-0" alt=""/>
             </div>
             <div className="w-32 h-28 shadow shadow-sm shadow-gray-200 rounded-2xl">
-                <img src={TypeScript} className="w-20 mx-6 my-5" alt=""/>
+                <img src={TypeScript} className="w-20 mx-6 my-3" alt=""/>
             </div>
         </div>
 
@@ -118,6 +127,13 @@ backgroundSize: "cover"}}>
         
         </div>
         <h1 className="font-cursive text-gray-400 text-center text-5xl pb-12">'Programming is not merely code; it's an art that transforms ideas into solutions, shaping a better world.'</h1>
+        </div>
+        <div className="bg-white">
+            <h1 className="pt-20 text-transparent bg-clip-text bg-gradient-to-l from-white to-gray-900 text-center text-3xl">Projects</h1>
+            <h1 className="pb-28 text-center text-base text-gray-500">Here are a selection of my latest projects</h1>
+            <div className="mx-44">
+                <ProjectSection/>
+            </div>
         </div>
    </section>
         </>

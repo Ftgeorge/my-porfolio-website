@@ -4,9 +4,17 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        hero: "url('../src/images/hero.jpeg')",
+      },
+    },
     fontFamily: {
-      cursive:["Karumbi", "sans-serif"],
+      cursive: ["Karumbi", "sans-serif"],
+      design: ["Lexend Deca", "sans-serif"],
+      cursive: ["Bell MT", "sans-serif"],
+      standard: ["Satoshi", "sans-serif"],
+      professional: ["Calibri, sans-serif"],
     },
   },
-  }
+}
